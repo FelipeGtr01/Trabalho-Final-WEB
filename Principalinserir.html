@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> ANOTAAE </title>
+
+</head>
+<body>
+            <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+            <div>
+                <h1 id="titulo"> &nbsp; &nbsp; &nbsp; ANOTAAE </h1>
+                <p id="subtitulo"> O melhor lugar para suas anotações </p>
+                <br>
+            </div>
+    
+            <!-- Início do formulário -->
+            <form name="Cadastro" method="get" action="Receber.php">
+    
+                <fieldset class="grupo">
+                    <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                    <div class="campo">
+                        <label for="nome"><strong> O que você precisa anotar hoje? </strong></label>
+                        <input type="text" name="nome" id="nome" style="width: 26em; height: 3em" required>
+                    </div>
+    
+                </fieldset> 
+    
+                <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+                <div class="campo">
+                    <label><strong> Qual o status para essa anotação? </strong></label>
+                    <label>
+                        <input type="radio" name="devweb" value="frontend" checked> Normal
+                    </label>
+                    <label>
+                        <input type="radio" name="devweb" value="backend"> Atenção
+                    </label>
+                    <label>
+                        <input type="radio" name="devweb" value="fullstack"> URGENTE
+                    </label>
+                </div>
+
+                <fieldset class="grupo">
+                    <!-- campo para receber a data de conclusão para as anotações -->
+                    <div class="campo">
+                        <label for="nome"><strong> Essa anotação precisa ser concluida em alguma data específica? (Se sim, digite a data) </strong></label>
+                        <input type="text" name="nome" id="nome" style="width: 26em; height: 3em">
+                    </div>
+    
+                </fieldset> 
+    
+                <!-- Botão para enviar as anotações -->
+                <button class="botao" type="submit" onsubmit=""> Salvar </button>
+                
+                <!-- Botão para cancelar os valores informados -->
+                <button class="botao2" type="reset" onsubmit="s"> Cancelar </button> 
+    
+            </form>
+
+</body>
+</html>

@@ -6,7 +6,7 @@ Felipe Gutierre;
 Gustavo Geballi.
 
 Para utilizar o frontend:
-1. Baixer o zip do git;
+1. Baixe o arquivo zip do git;
 2. Coloque os arquivos em uma pasta;
 3. E por último, abra o arquivo index.
 
